@@ -6,8 +6,7 @@ const app = express();
 
 const mongoose = require('mongoose');
 const port = process.env.PORT || 3000; // Boolean: if main port fails use backup port 3000
-const mongoURL = 'mongodb+srv://demo1234:1MpRrCpvHeDf1lRL@pydot16.tafgx.mongodb.net/pssocial?retryWrites=true&w=majority'
-//process.env.MONGODB_URL;
+const mongoURL = process.env.MONGODB_URL;
 
 const User = require('./models/User.js');
 const Post = require('./models/Post.js');
